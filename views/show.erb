@@ -1,10 +1,25 @@
-<p>First name: <%= @pizza.first_name %></p>
-<p>Last name: <%= @pizza.last_name %></p>
-<p>Topping: <%= @pizza.topping %></p>
-<p>Quantity: <%= @pizza.quantity %></p>
-
-<a href="/pizzas/<%= @pizza.id %>/edit">Amend Order</a>
-
-<form action="/pizzas/<%= @pizza.id %>/delete" method="post">
-  <input type="submit" value="Delete Order">
-</form>
+<h2>Order Details</h2>
+<table>
+  <tr>
+    <td id="col1">First name:</td>
+    <td><%= @pizza.first_name %></td>
+  </tr>
+  <tr>
+    <td id="col1">Last name:</td>
+    <td><%= @pizza.last_name %></td>
+  </tr>
+  <tr>
+    <td id="col1">Topping:</td>
+    <td><%= @pizza.topping %></td>
+  </tr>
+  <tr>
+    <td id="col1">Quantity:</td>
+    <td><%= @pizza.quantity %></td>
+  </tr>
+</table>
+<div id="buttons">
+  <a href="/pizzas/<%= @pizza.id %>/edit">Amend Order</a>
+  <form action="/pizzas/<%= @pizza.id %>/delete" method="post">
+    <input type="submit" value="Delete Order">
+  </form>
+</div>

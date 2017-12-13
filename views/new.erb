@@ -1,19 +1,29 @@
+<h2>Create a New Order</h2>
+<br>
 <form action="/pizzas" method="POST">
-
-  <label for="first-name-input">First name: </label>
-  <input id="first-name-input" type="text" name="first_name" value="">
-  <label for="last-name-input">Last name: </label>
-  <input id="last-name-input" type="text" name="last_name" value="">
-  <label for="topping-select">Topping: </label>
-  <select class="" id="topping-select" name="topping">
-    <option value="Pepperoni">Pepperoni</option>
-    <option value="Italian Sausage">Italian Sausage</option>
-    <option value="Mushroom">Mushroom</option>
-  </select>
-  <label for="quantity-input">Quantity: </label>
-  <input id="quantity-input" type="number" min="1" name="quantity" value="">
-  <br>
-  <br>
-  <input type="submit" name="" value="Order Pizza">
-
+  <table>
+    <tr>
+      <td><label for="first-name-input">First name: </label></td>
+      <td><input id="first-name-input" type="text" name="first_name" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="last-name-input">Last name: </label></td>
+      <td><input id="last-name-input" type="text" name="last_name" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="quantity-input">Quantity: </label></td>
+      <td><input id="quantity-input" type="number" min="1" name="quantity" value=""></td>
+    </tr>
+    <tr>
+      <td><label for="topping-select">Topping: </label></td>
+      <td>
+        <select class="" id="topping-select" name="topping">
+          <option value="Pepperoni">Pepperoni</option>
+          <option value="Italian Sausage">Italian Sausage</option>
+          <option value="Mushroom">Mushroom</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+    <input type="submit" name="" value="Order Pizza">
 </form>

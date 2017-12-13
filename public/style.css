@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body{
+  background-color: #F3DFA2;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #BB4430;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  color: white;
+  display: flex;
+
+}
+
+#pizza {
+  width: 20%;
+  justify-content: center;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+  width: 80%
+}
+
+nav {
+  position: fixed;
+  background-color: #BB4430;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  top: 100px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px;
+  background: #5F4039;
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background: #EFE6DD;
+  border: 1px solid #231F20;
+  color: #0B3C5D;
+}
+
+main {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 200px;
+  padding: 20px;
+}
+
+main a, input, select {
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  background: #5F4039;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+main a:hover, input:hover {
+  background: white;
+  border: 1px solid #231F20;
+  color: #0B3C5D;
+}
+
+table {
+  padding: 15px;
+}
+
+#col1 {
+  width: 100px;
+}
+
+tr {
+  height: 30px;
+}
+
+#buttons {
+  display: flex;
+}
